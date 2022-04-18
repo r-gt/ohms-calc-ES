@@ -1,0 +1,59 @@
+:root{
+    --frame: script/ohm.html
+}
+
+@font-face {font-family: fnt; src: url(/SourceCodePro-Regular.ttf);}
+body{font-family: fnt;}
+
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    background-color: #dedede;
+top: 0px;
+left: 0px;
+
+}
+
+.side-cont{position: absolute; top: 50%; transform:translate(0,-50%); width:100%}
+
+.side-btn{
+
+width:100%;
+background-color: #acacac;
+text-align: center;
+font-size: 240%;
+margin-top: 0%;
+}
+.side-btn :hover{cursor:pointer;}
+.tea{
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 80%;
+    border: 0px;
+}
+@media screen and (max-width: 1288px){ 
+    .sidebar{
+width: 100%;
+height: 110px;
+bottom: 0px;
+top: unset;
+    }
+    .tea{
+
+        height: 100%;
+        width: 100%;
+        top: 0px
+    }
+
+    .side-btn{
+    width: max-content;
+    text-align: center;
+    font-size: 30px;
+    width: auto;
+    }
+
+    .side-cont{top: unset;transform: unset; left: 50%;transform: translateX(-50%);width: 100%;}
+}
