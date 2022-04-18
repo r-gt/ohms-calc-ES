@@ -1,0 +1,3 @@
+ohmio : voltaje = amper
+amper * ohmio = voltaje
+voltio : amper = ohmio

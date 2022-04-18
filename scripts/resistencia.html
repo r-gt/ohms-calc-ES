@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="script-stylesheet.css">
+    </head>
+<body>
+    <p class="title2">Resistencia</p>
+    
+    <div class="everything">
+
+<p class="transform1">Corriente</p>    <p class="transform2">Tensión</p>
+<p class="res">Resultado</p>
+<input type="number" class="textbox1" id="po">
+<input type="number" class="textbox2" id="res">
+<p id="result" class="result"></p>
+<button onclick="Result()" class="button" id="btn" >Obtener Resultado</button>
+</div>
+
+
+<script>
+
+   
+    function Result(){
+        var X = document.getElementById("po").value;
+    var Y = document.getElementById("res").value;
+
+        document.getElementById("result").innerHTML = X/Y;
+        console.log(X/Y)
+
+    }
+</script>
+</body>
+</html>
